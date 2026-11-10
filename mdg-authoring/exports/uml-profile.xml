@@ -1,0 +1,179 @@
+<?xml  version='1.0' encoding='utf-8' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="12EAE1260F" name="Slovníky" version="1" alias="Slovníky" notes="Stereotypes, metaclasses, tagged values and QuickLink definitions."/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="slovnikyPackage" notes="">
+				<AppliesTo>
+					<Apply type="Package"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="adresa LKD" type="String" description="Povinné absolutní https:// IRI jmenného prostoru pro datové sady a pojmy." unit="" values="" default=""/>
+					<Tag name="adresa lokálního katalogu dat, ve kterém bude slovník registrován" type="String" description="" unit="" values="" default=""/>
+					<Tag name="popis slovníku" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="typObjektu" alias="Typ objektu" metatype="Typ objektu" notes="">
+				<AppliesTo>
+					<Apply type="Class"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="1. základ - definice" type="String" description="" unit="" values="" default=""/>
+					<Tag name="1. základ - popis" type="String" description="" unit="" values="" default=""/>
+					<Tag name="1. základ - zdroj" type="String" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - alternativní název" type="String" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - ekvivalentní pojem" type="String" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - související zdroj" type="String" description="" unit="" values="" default=""/>
+					<Tag name="3. rpp - agenda (kód)" type="String" description="" unit="" values="" default=""/>
+					<Tag name="3. rpp - agendový informační systém (kód)" type="String" description="" unit="" values="" default=""/>
+					<Tag name="identifikátor" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="typSubjektu" alias="Typ subjektu" metatype="Typ subjektu" notes="">
+				<AppliesTo>
+					<Apply type="Class"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="1. základ - definice" type="String" description="" unit="" values="" default=""/>
+					<Tag name="1. základ - popis" type="String" description="" unit="" values="" default=""/>
+					<Tag name="1. základ - zdroj" type="String" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - alternativní název" type="String" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - ekvivalentní pojem" type="String" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - související zdroj" type="String" description="" unit="" values="" default=""/>
+					<Tag name="3. rpp - agenda (kód)" type="String" description="" unit="" values="" default=""/>
+					<Tag name="3. rpp - agendový informační systém (kód)" type="String" description="" unit="" values="" default=""/>
+					<Tag name="identifikátor" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="typVlastnosti" alias="Typ vlastnosti" metatype="Typ vlastnosti" notes="">
+				<AppliesTo>
+					<Apply type="Class"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="1. základ - definice" type="String" description="" unit="" values="" default=""/>
+					<Tag name="1. základ - popis" type="String" description="" unit="" values="" default=""/>
+					<Tag name="1. základ - zdroj" type="String" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - alternativní název" type="String" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - datový typ" type="String" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - ekvivalentní pojem" type="String" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - související zdroj" type="String" description="" unit="" values="" default=""/>
+					<Tag name="3. rpp - je pojem sdílen v PPDF?" type="enumeration" description="" unit="" values="Ano,Ne" default=""/>
+					<Tag name="3. rpp - je pojem veřejný?" type="enumeration" description="" unit="" values="Ano,Ne" default=""/>
+					<Tag name="3. rpp - ustanovení dokládající neveřejnost pojmu" type="String" description="" unit="" values="" default=""/>
+					<Tag name="4. 360/2023 - typ obsahu údaje" type="enumeration" description="" unit="" values="Identifikační,Evidenční,Statistické" default=""/>
+					<Tag name="4. 360/2023 - způsob sdílení údaje" type="enumeration" description="" unit="" values="Veřejně přístupné,Poskytované na žádost,Zpřístupňované pro výkon agendy,Nesdílené" default=""/>
+					<Tag name="4. 360/2023 - způsob získání údaje" type="enumeration" description="" unit="" values="Základních registrů,Jiných agend,Vlastní,Provozní" default=""/>
+					<Tag name="identifikátor" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="typVztahu" alias="Typ vztahu" metatype="Typ vztahu" notes="">
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="1. základ - definice" type="String" description="" unit="" values="" default=""/>
+					<Tag name="1. základ - popis" type="String" description="" unit="" values="" default=""/>
+					<Tag name="1. základ - zdroj" type="String" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - alternativní název" type="String" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - ekvivalentní pojem" type="String" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - související zdroj" type="String" description="" unit="" values="" default=""/>
+					<Tag name="3. rpp - je pojem sdílen v PPDF?" type="enumeration" description="" unit="" values="Ano,Ne" default=""/>
+					<Tag name="3. rpp - je pojem veřejný?" type="enumeration" description="" unit="" values="Ano,Ne" default=""/>
+					<Tag name="3. rpp - ustanovení dokládající neveřejnost pojmu" type="String" description="" unit="" values="" default=""/>
+					<Tag name="identifikátor" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="datovaSada" alias="Datová sada" metatype="Datová sada" notes="">
+				<AppliesTo>
+					<Apply type="Class"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="časové pokrytí - konec" type="String" description="" unit="" values="" default=""/>
+					<Tag name="časové pokrytí - začátek" type="String" description="" unit="" values="" default=""/>
+					<Tag name="dokumentace" type="String" description="" unit="" values="" default=""/>
+					<Tag name="je zahrnuta v isvs" type="String" description="" unit="" values="" default=""/>
+					<Tag name="klíčové slovo" type="String" description="" unit="" values="" default=""/>
+					<Tag name="koncept euroVoc" type="String" description="" unit="" values="" default=""/>
+					<Tag name="kontaktní bod - email" type="String" description="" unit="" values="" default=""/>
+					<Tag name="kontaktní bod - jméno" type="String" description="" unit="" values="" default=""/>
+					<Tag name="metoda sbírání pojmů" type="enumeration" description="" unit="" values="podrobně,standard,agresivně" default=""/>
+					<Tag name="periodicita aktualizace" type="String" description="" unit="" values="" default=""/>
+					<Tag name="popis" type="String" description="" unit="" values="" default=""/>
+					<Tag name="poskytovatel" type="String" description="" unit="" values="" default=""/>
+					<Tag name="právní předpis" type="String" description="" unit="" values="" default=""/>
+					<Tag name="specifikace" type="String" description="" unit="" values="" default=""/>
+					<Tag name="téma" type="String" description="" unit="" values="" default=""/>
+					<Tag name="vstupní stránka" type="String" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="distribuceSouborKeStazeni" alias="Distribuce – soubor ke stažení" metatype="Distribuce – soubor ke stažení" notes="">
+				<AppliesTo>
+					<Apply type="Class"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="formát" type="String" description="" unit="" values="" default=""/>
+					<Tag name="podmínky užití - autor" type="String" description="" unit="" values="" default=""/>
+					<Tag name="podmínky užití - autor databáze" type="String" description="" unit="" values="" default=""/>
+					<Tag name="podmínky užití - autorské dílo" type="String" description="" unit="" values="" default=""/>
+					<Tag name="podmínky užití - databáze chráněná zvláštními právy" type="String" description="" unit="" values="" default=""/>
+					<Tag name="podmínky užití - databáze jako autorské dílo" type="String" description="" unit="" values="" default=""/>
+					<Tag name="podmínky užití - osobní údaje" type="String" description="" unit="" values="" default=""/>
+					<Tag name="právní předpis" type="String" description="" unit="" values="" default=""/>
+					<Tag name="přístupové url" type="String" description="" unit="" values="" default=""/>
+					<Tag name="schéma" type="String" description="" unit="" values="" default=""/>
+					<Tag name="soubor ke stažení" type="String" description="" unit="" values="" default=""/>
+					<Tag name="typ média" type="String" description="" unit="" values="" default=""/>
+					<Tag name="typ média balíčku" type="String" description="" unit="" values="" default=""/>
+					<Tag name="typ média komprese" type="String" description="" unit="" values="" default=""/>
+					<Tag name="typ obsahu sdílených údajů" type="String" description="Více hodnot oddělte středníkem; možnosti: Identifikační,Evidenční,Statistické" unit="" values="" default=""/>
+					<Tag name="způsob sdílení údajů" type="enumeration" description="" unit="" values="Veřejně přístupné,Poskytované na žádost,Zpřístupňované pro výkon agendy,Nesdílené" default=""/>
+					<Tag name="způsob získání sdílených údajů" type="String" description="Více hodnot oddělte středníkem; možnosti: Základních registrů,Jiných agend,Vlastní,Provozní" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="distribuceDatovaSluzba" alias="Distribuce – datová služba" metatype="Distribuce – datová služba" notes="">
+				<AppliesTo>
+					<Apply type="Class"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="podmínky užití - autor" type="String" description="" unit="" values="" default=""/>
+					<Tag name="podmínky užití - autor databáze" type="String" description="" unit="" values="" default=""/>
+					<Tag name="podmínky užití - autorské dílo" type="String" description="" unit="" values="" default=""/>
+					<Tag name="podmínky užití - databáze chráněná zvláštními právy" type="String" description="" unit="" values="" default=""/>
+					<Tag name="podmínky užití - databáze jako autorské dílo" type="String" description="" unit="" values="" default=""/>
+					<Tag name="podmínky užití - osobní údaje" type="String" description="" unit="" values="" default=""/>
+					<Tag name="právní předpis" type="String" description="" unit="" values="" default=""/>
+					<Tag name="přístupová služba - dokumentace" type="String" description="" unit="" values="" default=""/>
+					<Tag name="přístupová služba - popis přístupového bodu" type="String" description="" unit="" values="" default=""/>
+					<Tag name="přístupová služba - právní předpis" type="String" description="" unit="" values="" default=""/>
+					<Tag name="přístupová služba - přístupový bod" type="String" description="" unit="" values="" default=""/>
+					<Tag name="přístupová služba - specifikace" type="String" description="" unit="" values="" default=""/>
+					<Tag name="přístupové url" type="String" description="" unit="" values="" default=""/>
+					<Tag name="typ obsahu sdílených údajů" type="String" description="Více hodnot oddělte středníkem; možnosti: Identifikační,Evidenční,Statistické" unit="" values="" default=""/>
+					<Tag name="způsob sdílení údajů" type="enumeration" description="" unit="" values="Veřejně přístupné,Poskytované na žádost,Zpřístupňované pro výkon agendy,Nesdílené" default=""/>
+					<Tag name="způsob získání sdílených údajů" type="String" description="Více hodnot oddělte středníkem; možnosti: Základních registrů,Jiných agend,Vlastní,Provozní" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="vazbaDatoveSadyDistribuce" alias="má distribuci" metatype="má distribuci" notes="Propojuje datovou sadu s distribucí.">
+				<AppliesTo>
+					<Apply type="Association"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="sdileniUdaju" alias="týká se pojmu" metatype="týká se pojmu" notes="Asociace datové sady a pojmu; všechny tři hodnoty jsou nutné pro výstup sdílí_údaj.">
+				<AppliesTo>
+					<Apply type="Association"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="typ obsahu sdílených údajů" type="enumeration" description="" unit="" values="Identifikační,Evidenční,Statistické" default=""/>
+					<Tag name="způsob sdílení údajů" type="enumeration" description="" unit="" values="Veřejně přístupné,Poskytované na žádost,Zpřístupňované pro výkon agendy,Nesdílené" default=""/>
+					<Tag name="způsob získání sdílených údajů" type="enumeration" description="" unit="" values="Základních registrů,Jiných agend,Vlastní,Provozní" default=""/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+		<QuickLink data="Class,typObjektu,Class,typSubjektu,,,,Association,typVztahu,directed,Typ vztahu,,TRUE,,,TRUE,,0,,,,,&#xA;Class,typObjektu,,,,Class,typSubjektu,Association,typVztahu,directed,,Typ vztahu → Typ subjektu,TRUE,TRUE,,TRUE,,0,,,,,&#xA;Class,typObjektu,Class,typObjektu,,,,Association,typVztahu,directed,Typ vztahu,,TRUE,,,TRUE,,0,,,,,&#xA;Class,typObjektu,,,,Class,typObjektu,Association,typVztahu,directed,,Typ vztahu → Typ objektu,TRUE,TRUE,,TRUE,,0,,,,,&#xA;Class,typSubjektu,Class,typSubjektu,,,,Association,typVztahu,directed,Typ vztahu,,TRUE,,,TRUE,,0,,,,,&#xA;Class,typSubjektu,,,,Class,typSubjektu,Association,typVztahu,directed,,Typ vztahu → Typ subjektu,TRUE,TRUE,,TRUE,,0,,,,,&#xA;Class,typSubjektu,Class,typObjektu,,,,Association,typVztahu,directed,Typ vztahu,,TRUE,,,TRUE,,0,,,,,&#xA;Class,typSubjektu,,,,Class,typObjektu,Association,typVztahu,directed,,Typ vztahu → Typ objektu,TRUE,TRUE,,TRUE,,0,,,,,&#xA;Class,typVlastnosti,Class,typSubjektu,,,,Composition,,to,je vlastností,,TRUE,,,TRUE,,0,,,,,&#xA;Class,typVlastnosti,,,,Class,typSubjektu,Composition,,to,,je vlastností → Typ subjektu,TRUE,TRUE,,TRUE,,0,,,,,&#xA;Class,typVlastnosti,Class,typObjektu,,,,Composition,,to,je vlastností,,TRUE,,,TRUE,,0,,,,,&#xA;Class,typVlastnosti,,,,Class,typObjektu,Composition,,to,,je vlastností → Typ objektu,TRUE,TRUE,,TRUE,,0,,,,,&#xA;Class,typObjektu,Class,typObjektu,,,,Generalization,,to,má nadřazený pojem,,TRUE,,,TRUE,,0,,,,,&#xA;Class,typObjektu,,,,Class,typObjektu,Generalization,,to,,má nadřazený pojem → Typ objektu,TRUE,TRUE,,TRUE,,0,,,,,&#xA;Class,typVlastnosti,Class,typVlastnosti,,,,Generalization,,to,má nadřazený pojem,,TRUE,,,TRUE,,0,,,,,&#xA;Class,typVlastnosti,,,,Class,typVlastnosti,Generalization,,to,,má nadřazený pojem → Typ vlastnosti,TRUE,TRUE,,TRUE,,0,,,,,&#xA;Class,typSubjektu,Class,typSubjektu,,,,Generalization,,to,má nadřazený pojem,,TRUE,,,TRUE,,0,,,,,&#xA;Class,typSubjektu,,,,Class,typSubjektu,Generalization,,to,,má nadřazený pojem → Typ subjektu,TRUE,TRUE,,TRUE,,0,,,,,&#xA;Class,datovaSada,Class,distribuceSouborKeStazeni,,,,Association,vazbaDatoveSadyDistribuce,directed,má distribuci,,TRUE,,,TRUE,,0,,,,,&#xA;Class,datovaSada,,,,Class,distribuceSouborKeStazeni,Association,vazbaDatoveSadyDistribuce,directed,,má distribuci → Distribuce – soubor ke stažení,TRUE,TRUE,,TRUE,,0,,,,,&#xA;Class,datovaSada,Class,distribuceDatovaSluzba,,,,Association,vazbaDatoveSadyDistribuce,directed,má distribuci,,TRUE,,,TRUE,,0,,,,,&#xA;Class,datovaSada,,,,Class,distribuceDatovaSluzba,Association,vazbaDatoveSadyDistribuce,directed,,má distribuci → Distribuce – datová služba,TRUE,TRUE,,TRUE,,0,,,,,&#xA;Class,datovaSada,Class,typSubjektu,,,,Association,sdileniUdaju,directed,týká se pojmu,,TRUE,,,TRUE,,0,,,,,&#xA;Class,datovaSada,,,,Class,typSubjektu,Association,sdileniUdaju,directed,,týká se pojmu → Typ subjektu,TRUE,TRUE,,TRUE,,0,,,,,&#xA;Class,datovaSada,Class,typObjektu,,,,Association,sdileniUdaju,directed,týká se pojmu,,TRUE,,,TRUE,,0,,,,,&#xA;Class,datovaSada,,,,Class,typObjektu,Association,sdileniUdaju,directed,,týká se pojmu → Typ objektu,TRUE,TRUE,,TRUE,,0,,,,,&#xA;Class,datovaSada,Class,typVlastnosti,,,,Association,sdileniUdaju,directed,týká se pojmu,,TRUE,,,TRUE,,0,,,,,&#xA;Class,datovaSada,,,,Class,typVlastnosti,Association,sdileniUdaju,directed,,týká se pojmu → Typ vlastnosti,TRUE,TRUE,,TRUE,,0,,,,,&#xA;"/>
+	</Content>
+</UMLProfile>

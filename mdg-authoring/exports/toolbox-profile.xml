@@ -1,0 +1,36 @@
+<?xml  version='1.0' encoding='utf-8' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="1966D7C0A9" name="Slovníky" version="1" alias="Slovníky" notes="Two toolbox pages for the Slovníky diagram."/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="SlovníkyElements" alias="Slovníky" notes="">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Slovníky::typObjektu(UML::Class)" type="String" description="" unit="" values="" default="Typ objektu"/>
+					<Tag name="Slovníky::typSubjektu(UML::Class)" type="String" description="" unit="" values="" default="Typ subjektu"/>
+					<Tag name="Slovníky::typVlastnosti(UML::Class)" type="String" description="" unit="" values="" default="Typ vlastnosti"/>
+					<Tag name="Slovníky::typVztahu(UML::Association)" type="String" description="" unit="" values="" default="Typ vztahu"/>
+					<Tag name="UML::Composition" type="String" description="" unit="" values="" default="je vlastností"/>
+					<Tag name="UML::Generalization" type="String" description="" unit="" values="" default="má nadřazený pojem"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="SlovníkyDatoveSady" alias="Datové sady" notes="Datové sady, distribuce a jejich vztahy.">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Slovníky::datovaSada(UML::Class)" type="String" description="" unit="" values="" default="Datová sada"/>
+					<Tag name="Slovníky::distribuceDatovaSluzba(UML::Class)" type="String" description="" unit="" values="" default="Distribuce – datová služba"/>
+					<Tag name="Slovníky::distribuceSouborKeStazeni(UML::Class)" type="String" description="" unit="" values="" default="Distribuce – soubor ke stažení"/>
+					<Tag name="Slovníky::sdileniUdaju(UML::Association)" type="String" description="" unit="" values="" default="týká se pojmu"/>
+					<Tag name="Slovníky::vazbaDatoveSadyDistribuce(UML::Association)" type="String" description="" unit="" values="" default="má distribuci"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

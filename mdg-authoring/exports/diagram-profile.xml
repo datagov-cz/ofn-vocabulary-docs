@@ -1,0 +1,20 @@
+<?xml  version='1.0' encoding='utf-8' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="2BE0BD2046" name="Slovníky" version="1" alias="Slovníky" notes="The custom Slovníky diagram type."/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Slovníky" notes="Diagram určen&amp;#253; pro tvorbu slovn&amp;#237;ků OFN dle metodiky popisu dat DIA.">
+				<AppliesTo>
+					<Apply type="Diagram_Logical">
+						<Property name="alias" value="Slovníky"/>
+						<Property name="diagramID" value="ofnVoc"/>
+						<Property name="toolbox" value="Slovníky"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>
