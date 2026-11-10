@@ -1,4 +1,4 @@
-"""Add the real model template to an EA-generated MDG and package its XMI."""
+"""Add the real model template to an EA-generated MDG and package its files."""
 
 import argparse
 from pathlib import Path
@@ -9,6 +9,7 @@ import xml.etree.ElementTree as ET
 HERE = Path(__file__).resolve().parent
 REFERENCE_MDG = HERE.parent / "mdg" / "slovníkyMDG-datasets.xml"
 PATTERN = HERE.parent / "mdg" / "slovníkyPattern.xml"
+PATTERN_DESCRIPTION = PATTERN.with_suffix(".rtf")
 
 
 def finalize(mdg_path: Path) -> None:
@@ -24,6 +25,8 @@ def finalize(mdg_path: Path) -> None:
     if not location or Path(location).name != location:
         raise ValueError("The template location must be a filename beside the MDG")
     ET.parse(PATTERN)
+    if not PATTERN_DESCRIPTION.is_file():
+        raise ValueError(f"Pattern description does not exist: {PATTERN_DESCRIPTION}")
 
     tree = ET.parse(mdg_path)
     root = tree.getroot()
@@ -40,8 +43,12 @@ def finalize(mdg_path: Path) -> None:
     destination = mdg_path.parent / location
     if PATTERN.resolve() != destination.resolve():
         shutil.copy2(PATTERN, destination)
+    description_destination = destination.with_suffix(".rtf")
+    if PATTERN_DESCRIPTION.resolve() != description_destination.resolve():
+        shutil.copy2(PATTERN_DESCRIPTION, description_destination)
     print(f"Packaged {template.get('name')} in {mdg_path}")
     print(f"Pattern: {destination}")
+    print(f"Description: {description_destination}")
 
 
 if __name__ == "__main__":

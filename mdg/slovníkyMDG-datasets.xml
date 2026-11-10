@@ -26,7 +26,9 @@
 					<Tag name="1. základ - popis" type="" description="" unit="" values="" default=""/>
 					<Tag name="1. základ - zdroj" type="" description="" unit="" values="" default=""/>
 					<Tag name="2. doplnění - alternativní název" type="" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - datová sada v NKOD" type="String" description="" unit="" values="" default=""/>
 					<Tag name="2. doplnění - ekvivalentní pojem" type="" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - instance definované číselníkem" type="String" description="" unit="" values="" default=""/>
 					<Tag name="2. doplnění - související zdroj" type="" description="" unit="" values="" default=""/>
 					<Tag name="3. rpp - agenda (kód)" type="" description="" unit="" values="" default=""/>
 					<Tag name="3. rpp - agendový informační systém (kód)" type="" description="" unit="" values="" default=""/>
@@ -44,7 +46,9 @@
 					<Tag name="1. základ - popis" type="" description="" unit="" values="" default=""/>
 					<Tag name="1. základ - zdroj" type="" description="" unit="" values="" default=""/>
 					<Tag name="2. doplnění - alternativní název" type="" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - datová sada v NKOD" type="String" description="" unit="" values="" default=""/>
 					<Tag name="2. doplnění - ekvivalentní pojem" type="" description="" unit="" values="" default=""/>
+					<Tag name="2. doplnění - instance definované číselníkem" type="String" description="" unit="" values="" default=""/>
 					<Tag name="2. doplnění - související zdroj" type="" description="" unit="" values="" default=""/>
 					<Tag name="3. rpp - agenda (kód)" type="" description="" unit="" values="" default=""/>
 					<Tag name="3. rpp - agendový informační systém (kód)" type="" description="" unit="" values="" default=""/>
